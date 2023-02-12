@@ -41,8 +41,8 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../related_work.html">Related Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../extensions.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../roadmap.html">Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
@@ -50,14 +50,15 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/experimental.html">Experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/compilation.html">Compilation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/control_flow_ops.html">Control flow ops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/creation.html">Creation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/data_type.html">Data type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/device.html">Device</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/elementwise.html">Elementwise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/extensions.html">Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/experimental.html">Experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/gradients.html">Gradients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functional/ivy/layers.html">Layers</a></li>
@@ -76,19 +77,35 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../data_classes/array.html">Array</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../data_classes/container.html">Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_classes/array.html">Array</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/optimizers.html">Optimizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/initializers.html">Initializers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../stateful/converters.html">Converters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../stateful/sequential.html">Sequential</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../stateful/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../stateful/module.html">Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../stateful/optimizers.html">Optimizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../stateful/helpers.html">Helpers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../stateful/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../stateful/initializers.html">Initializers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Nested array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../nested_array/nested_array.html">Nested array</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Testing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../testing/assertions.html">Assertions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testing/available_frameworks.html">Available frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testing/function_testing.html">Function testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testing/globals.html">Globals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testing/hypothesis_helpers.html">Hypothesis helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testing/structs.html">Structs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testing/test_parameter_flags.html">Test parameter flags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testing/testing_helpers.html">Testing helpers</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -130,27 +147,57 @@
   <h1>Source code for ivy.func_wrapper</h1><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">ivy</span>
 <span class="kn">import</span> <span class="nn">functools</span>
+<span class="kn">import</span> <span class="nn">logging</span>
 <span class="kn">from</span> <span class="nn">types</span> <span class="kn">import</span> <span class="n">FunctionType</span>
 <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span>
+<span class="kn">import</span> <span class="nn">inspect</span>
 
 
 <span class="c1"># for wrapping (sequence matters)</span>
 <span class="n">FN_DECORATORS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;array_function_wrapper&quot;</span><span class="p">,</span>
     <span class="s2">&quot;infer_device&quot;</span><span class="p">,</span>
     <span class="s2">&quot;infer_dtype&quot;</span><span class="p">,</span>
     <span class="s2">&quot;integer_arrays_to_float&quot;</span><span class="p">,</span>
     <span class="s2">&quot;outputs_to_ivy_arrays&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;outputs_to_native_arrays&quot;</span><span class="p">,</span>
     <span class="s2">&quot;inputs_to_native_arrays&quot;</span><span class="p">,</span>
     <span class="s2">&quot;inputs_to_ivy_arrays&quot;</span><span class="p">,</span>
     <span class="s2">&quot;handle_out_argument&quot;</span><span class="p">,</span>
     <span class="s2">&quot;handle_nestable&quot;</span><span class="p">,</span>
     <span class="s2">&quot;handle_exceptions&quot;</span><span class="p">,</span>
     <span class="s2">&quot;with_unsupported_dtypes&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;handle_nans&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;handle_array_like_without_promotion&quot;</span><span class="p">,</span>
 <span class="p">]</span>
 
 
 <span class="c1"># Helpers #</span>
 <span class="c1"># --------#</span>
+
+
+<div class="viewcode-block" id="try_array_function_override"><a class="viewcode-back" href="../../func_wrapper/try_array_function_override.html#ivy.func_wrapper.try_array_function_override">[docs]</a><span class="k">def</span> <span class="nf">try_array_function_override</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">overloaded_args</span><span class="p">,</span> <span class="n">types</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">overloaded_args</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">None</span>
+
+    <span class="k">for</span> <span class="n">overloaded_arg</span> <span class="ow">in</span> <span class="n">overloaded_args</span><span class="p">:</span>
+        <span class="c1"># Note that we&#39;re only calling __array_function__ on the *first*</span>
+        <span class="c1"># occurence of each argument type. This is necessary for reasonable</span>
+        <span class="c1"># performance with a possibly long list of overloaded arguments, for</span>
+        <span class="c1"># which each __array_function__ implementation might reasonably need to</span>
+        <span class="c1"># check all argument types.</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">overloaded_arg</span><span class="o">.</span><span class="n">__array_function__</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">types</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">IvyNotImplementedException</span>
+
+        <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">NotImplemented</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">True</span><span class="p">,</span> <span class="n">result</span>
+
+    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+        <span class="s2">&quot;no implementation found for </span><span class="si">{}</span><span class="s2"> on types that implement &quot;</span>
+        <span class="s2">&quot;__array_function__: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">type</span><span class="p">,</span> <span class="n">overloaded_args</span><span class="p">)))</span>
+    <span class="p">)</span></div>
 
 
 <span class="k">def</span> <span class="nf">_get_first_array</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -175,10 +222,108 @@
 <span class="c1"># ---------------#</span>
 
 
-<div class="viewcode-block" id="inputs_to_native_arrays"><a class="viewcode-back" href="../../func_wrapper/inputs_to_native_arrays.html#ivy.func_wrapper.inputs_to_native_arrays">[docs]</a><span class="k">def</span> <span class="nf">inputs_to_native_arrays</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
-    <span class="nd">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+<div class="viewcode-block" id="handle_array_function"><a class="viewcode-back" href="../../func_wrapper/handle_array_function.html#ivy.func_wrapper.handle_array_function">[docs]</a><span class="k">def</span> <span class="nf">handle_array_function</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Wrap a function to extract the relevant argument types to be passed to</span>
+<span class="sd">    array_function method.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">new_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">overloaded_types</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">overloaded_args</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span> <span class="o">+</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">kwargs</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+            <span class="k">if</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span>
+                <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">)</span>
+                <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="s2">&quot;__array_function__&quot;</span><span class="p">)</span>
+            <span class="p">):</span>
+                <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">overloaded_types</span><span class="p">:</span>
+                    <span class="n">overloaded_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">arg</span><span class="p">))</span>
+                    <span class="k">if</span> <span class="p">(</span>
+                        <span class="n">arg</span><span class="o">.</span><span class="n">__array_function__</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="o">.</span><span class="n">__array_function__</span>
+                        <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">))</span>
+                    <span class="p">):</span>
+                        <span class="n">index</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">overloaded_args</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">old_arg</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">overloaded_args</span><span class="p">):</span>
+                            <span class="k">if</span> <span class="nb">issubclass</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">arg</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">old_arg</span><span class="p">)):</span>
+                                <span class="n">index</span> <span class="o">=</span> <span class="n">i</span>
+                                <span class="k">break</span>
+                        <span class="n">overloaded_args</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">arg</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+                <span class="n">arg</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="o">.</span><span class="n">cont_flatten_key_chains</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+                <span class="n">indices</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">nested_argwhere</span><span class="p">(</span>
+                    <span class="n">arg</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;__array_function__&quot;</span><span class="p">)</span>
+                <span class="p">)</span>
+                <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">indices</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">overloaded_types</span><span class="p">:</span>
+                        <span class="n">overloaded_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
+                        <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span>
+                            <span class="n">arg</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                        <span class="p">)</span><span class="o">.</span><span class="n">__array_function__</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="o">.</span><span class="n">__array_function__</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span>
+                            <span class="nb">getattr</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeArray</span><span class="p">)</span>
+                        <span class="p">):</span>
+                            <span class="n">index</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">overloaded_args</span><span class="p">)</span>
+                            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">old_arg</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">overloaded_args</span><span class="p">):</span>
+                                <span class="k">if</span> <span class="nb">issubclass</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])),</span> <span class="nb">type</span><span class="p">(</span><span class="n">old_arg</span><span class="p">)):</span>
+                                    <span class="n">index</span> <span class="o">=</span> <span class="n">i</span>
+                                    <span class="k">break</span>
+                            <span class="n">overloaded_args</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">arg</span><span class="p">)</span>
+
+        <span class="n">success</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">try_array_function_override</span><span class="p">(</span>
+            <span class="n">ivy</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">],</span> <span class="n">overloaded_args</span><span class="p">,</span> <span class="n">overloaded_types</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">success</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="n">new_func</span><span class="o">.</span><span class="n">array_function_wrapper</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="n">new_func</span></div>
+
+
+<div class="viewcode-block" id="handle_array_like_without_promotion"><a class="viewcode-back" href="../../func_wrapper/handle_array_like_without_promotion.html#ivy.func_wrapper.handle_array_like_without_promotion">[docs]</a><span class="k">def</span> <span class="nf">handle_array_like_without_promotion</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+        <span class="n">args</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+        <span class="n">num_args</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">type_hints</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">signature</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span><span class="o">.</span><span class="n">parameters</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">TypeError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">parameters</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">type_hints</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="n">annotations</span> <span class="o">=</span> <span class="p">[</span><span class="n">param</span><span class="o">.</span><span class="n">annotation</span> <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">type_hints</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">annotation</span><span class="p">,</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">arg</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span>
+            <span class="nb">zip</span><span class="p">(</span><span class="n">annotations</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
+        <span class="p">):</span>
+            <span class="n">annotation_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">annotation</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span>
+                <span class="p">(</span><span class="s2">&quot;rray&quot;</span> <span class="ow">in</span> <span class="n">annotation_str</span> <span class="ow">or</span> <span class="s2">&quot;Tensor&quot;</span> <span class="ow">in</span> <span class="n">annotation_str</span><span class="p">)</span>
+                <span class="ow">and</span> <span class="n">parameter</span> <span class="o">!=</span> <span class="s2">&quot;out&quot;</span>
+                <span class="ow">and</span> <span class="nb">all</span><span class="p">(</span>
+                    <span class="n">sq</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">annotation_str</span>
+                    <span class="k">for</span> <span class="n">sq</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;Sequence&quot;</span><span class="p">,</span> <span class="s2">&quot;List&quot;</span><span class="p">,</span> <span class="s2">&quot;Tuple&quot;</span><span class="p">,</span> <span class="s2">&quot;float&quot;</span><span class="p">,</span> <span class="s2">&quot;int&quot;</span><span class="p">,</span> <span class="s2">&quot;bool&quot;</span><span class="p">]</span>
+                <span class="p">)</span>
+            <span class="p">):</span>
+
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">num_args</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="n">ivy</span><span class="o">.</span><span class="n">is_array</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+                        <span class="n">args</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">parameters</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+                    <span class="n">kwarg</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="n">parameter</span><span class="p">]</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="n">ivy</span><span class="o">.</span><span class="n">is_array</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+                        <span class="n">kwargs</span><span class="p">[</span><span class="n">parameter</span><span class="p">]</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">kwarg</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="n">new_fn</span><span class="o">.</span><span class="n">handle_array_like_without_promotion</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="n">new_fn</span></div>
+
+
+<div class="viewcode-block" id="inputs_to_native_arrays"><a class="viewcode-back" href="../../func_wrapper/inputs_to_native_arrays.html#ivy.func_wrapper.inputs_to_native_arrays">[docs]</a><span class="k">def</span> <span class="nf">inputs_to_native_arrays</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Converts all `ivy.Array` instances in both the positional and keyword arguments</span>
 <span class="sd">        into `ivy.NativeArray` instances, and then calls the function with the updated</span>
 <span class="sd">        arguments.</span>
@@ -205,9 +350,7 @@
             <span class="k">del</span> <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;out&quot;</span><span class="p">]</span>
             <span class="n">has_out</span> <span class="o">=</span> <span class="kc">True</span>
         <span class="c1"># convert all arrays in the inputs to ivy.NativeArray instances</span>
-        <span class="n">new_args</span><span class="p">,</span> <span class="n">new_kwargs</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">args_to_native</span><span class="p">(</span>
-            <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">include_derived</span><span class="o">=</span><span class="p">{</span><span class="nb">tuple</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
-        <span class="p">)</span>
+        <span class="n">new_args</span><span class="p">,</span> <span class="n">new_kwargs</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">args_to_native</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="c1"># add the original out argument back to the keyword arguments</span>
         <span class="k">if</span> <span class="n">has_out</span><span class="p">:</span>
             <span class="n">new_kwargs</span><span class="p">[</span><span class="s2">&quot;out&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">out</span>
@@ -218,9 +361,9 @@
 
 
 <div class="viewcode-block" id="inputs_to_ivy_arrays"><a class="viewcode-back" href="../../func_wrapper/inputs_to_ivy_arrays.html#ivy.func_wrapper.inputs_to_ivy_arrays">[docs]</a><span class="k">def</span> <span class="nf">inputs_to_ivy_arrays</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
-    <span class="nd">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Converts all `ivy.NativeArray` instances in both the positional and keyword</span>
 <span class="sd">        arguments into `ivy.Array` instances, and then calls the function with the</span>
 <span class="sd">        updated arguments.</span>
@@ -254,9 +397,9 @@
 
 
 <div class="viewcode-block" id="outputs_to_ivy_arrays"><a class="viewcode-back" href="../../func_wrapper/outputs_to_ivy_arrays.html#ivy.func_wrapper.outputs_to_ivy_arrays">[docs]</a><span class="k">def</span> <span class="nf">outputs_to_ivy_arrays</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
-    <span class="nd">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Calls the function, and then converts all `ivy.NativeArray` instances in</span>
 <span class="sd">        the function return into `ivy.Array` instances.</span>
 
@@ -274,52 +417,54 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="c1"># call unmodified function</span>
         <span class="n">ret</span> <span class="o">=</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">ivy</span><span class="o">.</span><span class="n">get_array_mode</span><span class="p">():</span>
-            <span class="k">return</span> <span class="n">ret</span>
         <span class="c1"># convert all arrays in the return to `ivy.Array` instances</span>
-        <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">to_ivy</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="n">nested</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">include_derived</span><span class="o">=</span><span class="p">{</span><span class="nb">tuple</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="n">ivy</span><span class="o">.</span><span class="n">to_ivy</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="n">nested</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">include_derived</span><span class="o">=</span><span class="p">{</span><span class="nb">tuple</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
+            <span class="k">if</span> <span class="n">ivy</span><span class="o">.</span><span class="n">get_array_mode</span><span class="p">()</span>
+            <span class="k">else</span> <span class="n">ret</span>
+        <span class="p">)</span>
 
     <span class="n">new_fn</span><span class="o">.</span><span class="n">outputs_to_ivy_arrays</span> <span class="o">=</span> <span class="kc">True</span>
     <span class="k">return</span> <span class="n">new_fn</span></div>
 
 
-<div class="viewcode-block" id="from_zero_dim_arrays_to_float"><a class="viewcode-back" href="../../func_wrapper/from_zero_dim_arrays_to_float.html#ivy.func_wrapper.from_zero_dim_arrays_to_float">[docs]</a><span class="k">def</span> <span class="nf">from_zero_dim_arrays_to_float</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
-    <span class="nd">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+<div class="viewcode-block" id="output_to_native_arrays"><a class="viewcode-back" href="../../func_wrapper/output_to_native_arrays.html#ivy.func_wrapper.output_to_native_arrays">[docs]</a><span class="k">def</span> <span class="nf">output_to_native_arrays</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calls the function, and then converts all `ivy.Array` instances in</span>
+<span class="sd">    the function return into `ivy.NativeArray` instances.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    args</span>
+<span class="sd">        The arguments to be passed to the function.</span>
+
+<span class="sd">    kwargs</span>
+<span class="sd">        The keyword arguments to be passed to the function.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">        The return of the function, with ivy arrays as native arrays.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Calls the function, and then converts all 0 dimensional array instances in</span>
-<span class="sd">        the function to float numbers if out argument is not provided.</span>
-
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        args</span>
-<span class="sd">            The arguments to be passed to the function.</span>
-
-<span class="sd">        kwargs</span>
-<span class="sd">            The keyword arguments to be passed to the function.</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">            The return of the function, with 0 dimensional arrays as float numbers.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="c1"># call unmodified function</span>
         <span class="n">ret</span> <span class="o">=</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="c1"># get out arg index</span>
-        <span class="n">out_arg_pos</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">arg_info</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;out&quot;</span><span class="p">)[</span><span class="s2">&quot;idx&quot;</span><span class="p">]</span>
-        <span class="c1"># check if out is None or out is not present in args and kwargs.</span>
-        <span class="n">out_args</span> <span class="o">=</span> <span class="n">out_arg_pos</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="ow">and</span> <span class="n">args</span><span class="p">[</span><span class="n">out_arg_pos</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span>
-        <span class="n">out_kwargs</span> <span class="o">=</span> <span class="s2">&quot;out&quot;</span> <span class="ow">in</span> <span class="n">kwargs</span> <span class="ow">and</span> <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;out&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span>
-        <span class="k">if</span> <span class="n">ret</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">()</span> <span class="ow">and</span> <span class="p">(</span><span class="n">out_args</span> <span class="ow">or</span> <span class="n">out_kwargs</span><span class="p">):</span>
-            <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span>
-        <span class="c1"># convert to float from 0 dim</span>
-        <span class="k">return</span> <span class="n">ret</span>
+        <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">to_native</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="n">nested</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">include_derived</span><span class="o">=</span><span class="p">{</span><span class="nb">tuple</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 
-    <span class="n">new_fn</span><span class="o">.</span><span class="n">zero_dim_arrays_to_float</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">new_fn</span><span class="o">.</span><span class="n">outputs_to_native_arrays</span> <span class="o">=</span> <span class="kc">True</span>
     <span class="k">return</span> <span class="n">new_fn</span></div>
 
 
+<div class="viewcode-block" id="to_ivy_arrays_and_back"><a class="viewcode-back" href="../../func_wrapper/to_ivy_arrays_and_back.html#ivy.func_wrapper.to_ivy_arrays_and_back">[docs]</a><span class="k">def</span> <span class="nf">to_ivy_arrays_and_back</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Wraps `fn` so that input arrays are all converted to `ivy.Array` instances</span>
+<span class="sd">    and return arrays are all converted to `ivy.NativeArray` instances.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">output_to_native_arrays</span><span class="p">(</span><span class="n">inputs_to_ivy_arrays</span><span class="p">(</span><span class="n">fn</span><span class="p">))</span></div>
+
+
 <div class="viewcode-block" id="to_native_arrays_and_back"><a class="viewcode-back" href="../../func_wrapper/to_native_arrays_and_back.html#ivy.func_wrapper.to_native_arrays_and_back">[docs]</a><span class="k">def</span> <span class="nf">to_native_arrays_and_back</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Wraps `fn` so that input arrays are all converted to `ivy.NativeArray` instances</span>
 <span class="sd">    and return arrays are all converted to `ivy.Array` instances.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -331,9 +476,9 @@
 
 
 <div class="viewcode-block" id="infer_dtype"><a class="viewcode-back" href="../../func_wrapper/infer_dtype.html#ivy.func_wrapper.infer_dtype">[docs]</a><span class="k">def</span> <span class="nf">infer_dtype</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
-    <span class="nd">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Determines the correct `dtype`, and then calls the function with the `dtype`</span>
 <span class="sd">        passed explicitly.</span>
 
@@ -364,9 +509,9 @@
 
 
 <div class="viewcode-block" id="integer_arrays_to_float"><a class="viewcode-back" href="../../func_wrapper/integer_arrays_to_float.html#ivy.func_wrapper.integer_arrays_to_float">[docs]</a><span class="k">def</span> <span class="nf">integer_arrays_to_float</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
-    <span class="nd">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Promotes all the integer array inputs passed to the function both</span>
 <span class="sd">        as positional or keyword arguments to the default float dtype.</span>
 
@@ -405,9 +550,9 @@
 
 
 <div class="viewcode-block" id="infer_device"><a class="viewcode-back" href="../../func_wrapper/infer_device.html#ivy.func_wrapper.infer_device">[docs]</a><span class="k">def</span> <span class="nf">infer_device</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
-    <span class="nd">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Determines the correct `device`, and then calls the function with the `device`</span>
 <span class="sd">        passed explicitly.</span>
 
@@ -444,9 +589,9 @@
 <div class="viewcode-block" id="handle_out_argument"><a class="viewcode-back" href="../../func_wrapper/handle_out_argument.html#ivy.func_wrapper.handle_out_argument">[docs]</a><span class="k">def</span> <span class="nf">handle_out_argument</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
     <span class="n">handle_out_in_backend</span> <span class="o">=</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="s2">&quot;support_native_out&quot;</span><span class="p">)</span>
 
-    <span class="nd">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Calls `fn` with the `out` argument handled correctly for performing an inplace</span>
 <span class="sd">        update.</span>
 
@@ -474,11 +619,24 @@
             <span class="c1"># compute return, with backend inplace update handled by</span>
             <span class="c1"># the backend function</span>
             <span class="n">ret</span> <span class="o">=</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">native_out</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-            <span class="n">out</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">to_native</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="p">(</span><span class="nb">tuple</span><span class="p">,</span> <span class="nb">list</span><span class="p">)):</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ret</span><span class="p">)):</span>
+                    <span class="n">out</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">to_native</span><span class="p">(</span><span class="n">ret</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">out</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">to_native</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">out</span>
         <span class="c1"># compute return, and then handle the inplace update explicitly</span>
+
         <span class="n">ret</span> <span class="o">=</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">inplace_update</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">ret</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">ivy</span><span class="o">.</span><span class="n">is_array</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">ivy</span><span class="o">.</span><span class="n">is_ivy_container</span><span class="p">(</span><span class="n">ret</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">nested_multi_map</span><span class="p">(</span>
+                <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">_</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">inplace_update</span><span class="p">(</span>
+                    <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ivy</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ivy</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+                <span class="p">),</span>
+                <span class="p">[</span><span class="n">out</span><span class="p">,</span> <span class="n">ret</span><span class="p">],</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">inplace_update</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">out</span><span class="p">)))</span>
+        <span class="c1"># return output matches the dtype of the out array to match numpy and torch</span>
 
     <span class="n">new_fn</span><span class="o">.</span><span class="n">handle_out_argument</span> <span class="o">=</span> <span class="kc">True</span>
     <span class="k">return</span> <span class="n">new_fn</span></div>
@@ -491,9 +649,9 @@
 <div class="viewcode-block" id="handle_nestable"><a class="viewcode-back" href="../../func_wrapper/handle_nestable.html#ivy.func_wrapper.handle_nestable">[docs]</a><span class="k">def</span> <span class="nf">handle_nestable</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
     <span class="n">fn_name</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="vm">__name__</span>
 
-    <span class="nd">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Calls `fn` with the *nestable* property of the function correctly handled.</span>
 <span class="sd">        This means mapping the function to the container leaves if any containers are</span>
 <span class="sd">        passed in the input.</span>
@@ -513,7 +671,12 @@
         <span class="c1"># if any of the arguments or keyword arguments passed to the function contains</span>
         <span class="c1"># a container, get the container&#39;s version of the function and call it using</span>
         <span class="c1"># the passed arguments.</span>
-        <span class="n">cont_fn</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="s2">&quot;static_&quot;</span> <span class="o">+</span> <span class="n">fn_name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="s2">&quot;static_&quot;</span> <span class="o">+</span> <span class="n">fn_name</span><span class="p">):</span>
+            <span class="n">cont_fn</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="s2">&quot;static_&quot;</span> <span class="o">+</span> <span class="n">fn_name</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">cont_fn</span> <span class="o">=</span> <span class="k">lambda</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="o">.</span><span class="n">cont_multi_map_in_function</span><span class="p">(</span>
+                <span class="n">fn</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
+            <span class="p">)</span>
         <span class="k">if</span> <span class="n">ivy</span><span class="o">.</span><span class="n">get_nestable_mode</span><span class="p">()</span> <span class="ow">and</span> <span class="p">(</span>
             <span class="n">ivy</span><span class="o">.</span><span class="n">nested_any</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">is_ivy_container</span><span class="p">,</span> <span class="n">check_nests</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="ow">or</span> <span class="n">ivy</span><span class="o">.</span><span class="n">nested_any</span><span class="p">(</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">is_ivy_container</span><span class="p">,</span> <span class="n">check_nests</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -531,8 +694,10 @@
 <span class="c1"># Functions #</span>
 
 
-<span class="k">def</span> <span class="nf">_wrap_function</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">to_wrap</span><span class="p">:</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">original</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Apply wrapping to backend implementation `to_wrap` if the original implementation</span>
+<span class="k">def</span> <span class="nf">_wrap_function</span><span class="p">(</span>
+    <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">to_wrap</span><span class="p">:</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">original</span><span class="p">:</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">compositional</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Apply wrapping to backend implementation `to_wrap` if the original implementation</span>
 <span class="sd">    `original` is also wrapped, and if `to_wrap` is not already wrapped. Attributes</span>
 <span class="sd">    `handle_nestable`, `infer_device` etc are set during wrapping, hence indicate to</span>
 <span class="sd">    us whether a certain function has been wrapped or not. Also handles wrapping of the</span>
@@ -544,6 +709,9 @@
 <span class="sd">        the new implementation to potentially wrap</span>
 <span class="sd">    original</span>
 <span class="sd">        the original implementation of `to_wrap` which tells us which wrappers we need.</span>
+<span class="sd">    compositional</span>
+<span class="sd">        indicates whether the function being wrapped is compositional</span>
+<span class="sd">        (Default Value = ``False``).</span>
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
@@ -555,12 +723,15 @@
         <span class="k">for</span> <span class="n">linalg_k</span><span class="p">,</span> <span class="n">linalg_v</span> <span class="ow">in</span> <span class="n">to_wrap</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="k">if</span> <span class="p">(</span>
                 <span class="nb">isinstance</span><span class="p">(</span><span class="n">linalg_v</span><span class="p">,</span> <span class="n">FunctionType</span><span class="p">)</span>
-                <span class="ow">and</span> <span class="n">linalg_k</span> <span class="o">!=</span> <span class="s2">&quot;namedtuple&quot;</span>
+                <span class="ow">and</span> <span class="n">linalg_k</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="s2">&quot;namedtuple&quot;</span>
                 <span class="ow">and</span> <span class="n">linalg_k</span> <span class="o">!=</span> <span class="s2">&quot;with_unsupported_dtypes&quot;</span>
                 <span class="ow">and</span> <span class="ow">not</span> <span class="n">linalg_k</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)</span>
             <span class="p">):</span>
                 <span class="n">to_wrap</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">linalg_k</span><span class="p">]</span> <span class="o">=</span> <span class="n">_wrap_function</span><span class="p">(</span>
-                    <span class="n">linalg_k</span><span class="p">,</span> <span class="n">linalg_v</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">linalg_k</span><span class="p">]</span>
+                    <span class="n">linalg_k</span><span class="p">,</span>
+                    <span class="n">linalg_v</span><span class="p">,</span>
+                    <span class="n">ivy</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">linalg_k</span><span class="p">],</span>
+                    <span class="n">compositional</span><span class="o">=</span><span class="n">compositional</span><span class="p">,</span>
                 <span class="p">)</span>
         <span class="k">return</span> <span class="n">to_wrap</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">to_wrap</span><span class="p">,</span> <span class="n">FunctionType</span><span class="p">):</span>
@@ -575,6 +746,18 @@
         <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="n">docstring_attr</span><span class="p">:</span>
             <span class="nb">setattr</span><span class="p">(</span><span class="n">to_wrap</span><span class="p">,</span> <span class="n">attr</span><span class="p">,</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="n">attr</span><span class="p">))</span>
         <span class="c1"># wrap decorators</span>
+        <span class="n">mixed</span> <span class="o">=</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="s2">&quot;mixed_function&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">mixed</span><span class="p">:</span>
+            <span class="n">to_replace</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="kc">True</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;inputs_to_ivy_arrays&quot;</span><span class="p">],</span>
+                <span class="kc">False</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;outputs_to_ivy_arrays&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;inputs_to_native_arrays&quot;</span><span class="p">,</span>
+                <span class="p">],</span>
+            <span class="p">}</span>
+            <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="n">to_replace</span><span class="p">[</span><span class="n">compositional</span><span class="p">]:</span>
+                <span class="nb">setattr</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="n">attr</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
         <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="n">FN_DECORATORS</span><span class="p">:</span>
             <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">original</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">to_wrap</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
                 <span class="n">to_wrap</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">ivy</span><span class="p">,</span> <span class="n">attr</span><span class="p">)(</span><span class="n">to_wrap</span><span class="p">)</span>
@@ -583,6 +766,9 @@
 
 <span class="c1"># Gets dtype from a version dictionary</span>
 <span class="k">def</span> <span class="nf">_dtype_from_version</span><span class="p">(</span><span class="n">dic</span><span class="p">,</span> <span class="n">version</span><span class="p">):</span>
+    <span class="c1"># if version is a string, it&#39;s a frontend function</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">version</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">version</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">functional</span><span class="o">.</span><span class="n">frontends</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s2">&quot;versions&quot;</span><span class="p">][</span><span class="n">version</span><span class="p">]</span>
     <span class="c1"># if version is a dict, extract the version</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">version</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
         <span class="n">version</span> <span class="o">=</span> <span class="n">version</span><span class="p">[</span><span class="s2">&quot;version&quot;</span><span class="p">]</span>
@@ -619,7 +805,7 @@
 
 <span class="k">def</span> <span class="nf">_versioned_attribute_factory</span><span class="p">(</span><span class="n">attribute_function</span><span class="p">,</span> <span class="n">base</span><span class="p">):</span>
     <span class="k">class</span> <span class="nc">VersionedAttributes</span><span class="p">(</span><span class="n">base</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Creates a class which inherits `base` this way if isinstance is called on an</span>
 <span class="sd">        instance of the class, it will return True if testing for the baseclass, such as</span>
 <span class="sd">        isinstance(instance, tuple) if `base` is tuple.</span>
@@ -639,11 +825,11 @@
         <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
             <span class="k">return</span> <span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="fm">__get__</span><span class="p">())</span>
 
-    <span class="k">return</span> <span class="n">VersionedAttributes</span><span class="p">()</span><span class="o">.</span><span class="fm">__get__</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">VersionedAttributes</span><span class="p">()</span>
 
 
 <span class="k">def</span> <span class="nf">_dtype_device_wrapper_creator</span><span class="p">(</span><span class="n">attrib</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Creates a wrapper for a dtype or device attribute, which returns the correct</span>
 <span class="sd">    dtype or device for the current version of the backend.</span>
 
@@ -661,6 +847,22 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">_wrapper_outer</span><span class="p">(</span><span class="n">version_dict</span><span class="p">,</span> <span class="n">version</span><span class="p">):</span>
+
+        <span class="n">typesets</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;valid&quot;</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">valid_dtypes</span><span class="p">,</span>
+            <span class="s2">&quot;numeric&quot;</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">valid_numeric_dtypes</span><span class="p">,</span>
+            <span class="s2">&quot;float&quot;</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">valid_float_dtypes</span><span class="p">,</span>
+            <span class="s2">&quot;integer&quot;</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">valid_int_dtypes</span><span class="p">,</span>
+            <span class="s2">&quot;unsigned&quot;</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">valid_uint_dtypes</span><span class="p">,</span>
+            <span class="s2">&quot;complex&quot;</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">valid_complex_dtypes</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">version_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">typesets</span><span class="p">:</span>
+                    <span class="n">version_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                        <span class="n">version_dict</span><span class="p">[</span><span class="n">key</span><span class="p">][:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">typesets</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">+</span> <span class="n">version_dict</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:]</span>
+                    <span class="p">)</span>
+
         <span class="k">def</span> <span class="nf">_wrapped</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
             <span class="n">val</span> <span class="o">=</span> <span class="n">_versioned_attribute_factory</span><span class="p">(</span>
                 <span class="k">lambda</span><span class="p">:</span> <span class="n">_dtype_from_version</span><span class="p">(</span><span class="n">version_dict</span><span class="p">,</span> <span class="n">version</span><span class="p">),</span> <span class="n">t</span>
@@ -672,6 +874,72 @@
         <span class="k">return</span> <span class="n">_wrapped</span>
 
     <span class="k">return</span> <span class="n">_wrapper_outer</span>
+
+
+<span class="c1"># nans Handling #</span>
+<span class="c1"># --------------#</span>
+
+
+<span class="k">def</span> <span class="nf">_leaf_has_nans</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">has_nans</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">ivy</span><span class="o">.</span><span class="n">is_array</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">x</span> <span class="ow">is</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;nan&quot;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">_nest_has_nans</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">nested_any</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">_leaf_has_nans</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="handle_nans"><a class="viewcode-back" href="../../func_wrapper/handle_nans.html#ivy.func_wrapper.handle_nans">[docs]</a><span class="k">def</span> <span class="nf">handle_nans</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">new_fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Checks for the existence of nans in all arrays in the `args`</span>
+<span class="sd">        and `kwargs`. The presence of nans is then handled depending</span>
+<span class="sd">        on the enabled `nan_policy`.</span>
+
+<span class="sd">        Following policies apply:</span>
+<span class="sd">        raise_exception: raises an exception in case nans are present</span>
+<span class="sd">        warns: warns a user in case nans are present</span>
+<span class="sd">        nothing: does nothing</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        args</span>
+<span class="sd">            The arguments to be passed to the function.</span>
+<span class="sd">        kwargs</span>
+<span class="sd">            The keyword arguments to be passed to the function.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">            The return of the function, with handling of inputs based</span>
+<span class="sd">            on the selected `nan_policy`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">nan_policy</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">get_nan_policy</span><span class="p">()</span>
+        <span class="c1"># skip the check if the current nan policy is `nothing``</span>
+        <span class="k">if</span> <span class="n">nan_policy</span> <span class="o">==</span> <span class="s2">&quot;nothing&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="c1"># check all args and kwards for presence of nans</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">_nest_has_nans</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="ow">or</span> <span class="n">_nest_has_nans</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
+            <span class="c1"># handle nans based on the selected policy</span>
+            <span class="k">if</span> <span class="n">nan_policy</span> <span class="o">==</span> <span class="s2">&quot;raise_exception&quot;</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">IvyException</span><span class="p">(</span>
+                    <span class="s2">&quot;Nans are not allowed in `raise_exception` policy.&quot;</span>
+                <span class="p">)</span>
+            <span class="k">elif</span> <span class="n">nan_policy</span> <span class="o">==</span> <span class="s2">&quot;warns&quot;</span><span class="p">:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Nans are present in the input.&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="n">new_fn</span><span class="o">.</span><span class="n">handle_nans</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="n">new_fn</span></div>
 
 
 <span class="c1"># Decorators to allow for versioned attributes</span>
@@ -694,7 +962,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2023, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
